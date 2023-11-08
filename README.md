@@ -30,6 +30,21 @@ The provided code performs the following tasks:
 
 The code includes functions such as `setup()`, `loop()`, `FindString(int RequiredID)`, and `processString(String NextString)`, which are responsible for different aspects of data processing and analysis.
 
+### Detailed code explaination  
+This ESP32 code is designed to read a text file and parse specific data based on user input. The program reads the contents of a file named "data750.txt" stored in the FFat file system. It searches for a specific ID provided by the user and then processes the relevant data associated with that ID.
+
+Here is a brief overview of the code:
+
+1. The script initializes required variables and sets up the serial communication.
+
+2. The `loop()` function continuously checks for any available data from the serial input. If data is available, it calls the `FindString` function to search for the entered ID.
+
+3. The `FindString` function reads the content of the "data750.txt" file, identifies the required ID, and then processes the associated data. It makes use of various string manipulation functions to extract the required information.
+
+4. The FindString function scans for numbers enclosed within two inverted commas. If the number entered via the serial input matches the number in the file, the function proceeds to read the data until it encounters an ending curly bracket (}). Subsequently, it stores the string starting from the identified number up to the closing curly bracket and passes this string to the processString function.
+
+5. The processString function is responsible for parsing Data1 and Data2 from the provided string and displays them on the Serial monitor. You can manipulate the data as required, performing tasks beyond the scope of mere display.
+
 ## File Description
 
 The data file (`data750.txt`) should be stored in the FATFS of the ESP board. Ensure that the file is properly formatted to guarantee the correct functioning of the program.  
