@@ -41,7 +41,7 @@ Here is a brief overview of the code:
 
 3. The `FindString` function reads the content of the "data750.txt" file, identifies the required ID, and then processes the associated data. It makes use of various string manipulation functions to extract the required information.
 
-4. The FindString function scans for numbers enclosed within two inverted commas like ```"526"```. If the number entered via the serial input matches the number in the file, the function proceeds to read the data until it encounters an ending curly bracket ```}````. Subsequently, it stores the string starting from the identified number up to the closing curly bracket and passes this string to the processString function.
+4. The FindString function scans for numbers enclosed within two inverted commas like ```"526"```. If the number entered via the serial input matches the number in the file, the function proceeds to read the data until it encounters an ending curly bracket ```}```. Subsequently, it stores the string starting from the identified number up to the closing curly bracket and passes this string to the processString function.
 
 5. The processString function is responsible for parsing Data1 and Data2 from the provided string and displays them on the Serial monitor. You can manipulate the data as required, performing tasks beyond the scope of mere display.
 
