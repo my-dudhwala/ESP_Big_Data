@@ -32,7 +32,16 @@ The code includes functions such as `setup()`, `loop()`, `FindString(int Require
 
 ## File Description
 
-The data file (`data750.txt`) should be stored in the FATFS of the ESP board. Ensure that the file is properly formatted to guarantee the correct functioning of the program.
+The data file (`data750.txt`) should be stored in the FATFS of the ESP board. Ensure that the file is properly formatted to guarantee the correct functioning of the program.  
+
+### Data foamat  
+
+The data format is as given below,  
+```
+"1",{"ID_one" : "Data1", "ID_two" : "Data2"}  
+"2",{"ID_one" : "Data3", "ID_two" : "Data4"}  
+"3",{"ID_one" : "Data5", "ID_two" : "Data6"}
+```
 
 ## Important Notes
 
