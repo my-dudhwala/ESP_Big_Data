@@ -18,11 +18,12 @@ In details, this method involves storing a sizable 3MB data on Flash, enabling t
 
 ## How to Use
 
-1. Upload the provided code to your **16MB ESP** board using the Arduino IDE.
-2. Put the ```esp32fs.jar``` file to this path in your machine ```C:\Users\LC-124-145\Documents\Arduino\tools\ESP32FS\tool```
-3. Put the ```data750.txt``` file to this path in your machine ```C:\Users\LC-124-145\Documents\Arduino\YourCode\data```
-4. Restart the Arduino IDE, go to tools, there should be a new option named <u> ESP32 sketch data upload </u>, click that and choose fatfs by a new popup came by this option.
-5. Run the program and input the desired ID to search for within the data.
+1. **Upload the provided code** to your 16MB ESP board using the Arduino IDE.
+2. Place the `esp32fs.jar` file in the following path on your machine: `C:\Users\LC-124-145\Documents\Arduino\tools\ESP32FS\tool`.
+3. Store the `data750.txt` file in this directory on your machine: `C:\Users\LC-124-145\Documents\Arduino\YourCode\data`.
+4. **Restart the Arduino IDE**, go to `tools`, and select the new option named **ESP32 sketch data upload**. Choose `fatfs` from the popup menu.
+5. **Run the program** and input the desired ID to search for within the data.
+
 
 ## Code Explanation
 
