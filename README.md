@@ -13,7 +13,7 @@ In details, this method involves storing a sizable 3MB data on Flash, enabling t
 
 ### Software Requirements
 
-- Arduino IDE
+- Arduino IDE (**Lagacy version must,** The Arduino IDE 2.0 will not work, 2.0 Doesn't supports any file upload tool)
 - FFat library
 
 ## How to Use
