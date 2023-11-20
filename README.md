@@ -21,8 +21,9 @@ In details, this method involves storing a sizable 3MB data on Flash, enabling t
 1. **Upload the provided code** to your 16MB ESP board using the Arduino IDE.
 2. Place the `esp32fs.jar` file in the following path on your machine: `C:\Users\LC-124-145\Documents\Arduino\tools\ESP32FS\tool`.
 3. Store the `data750.txt` file in this directory on your machine: `C:\Users\LC-124-145\Documents\Arduino\YourCode\data`.
-4. **Restart the Arduino IDE**, go to `tools`, and select the new option named **ESP32 sketch data upload**. Choose `fatfs` from the popup menu.
-5. **Run the ESP32**, open the serial monitor, and input the required ID. Your testing phase completes after this step.
+4. Place the `mkfatfs.exe` file in the following path on your machine: `C:\Users\LC-124-145[Your Machine name]\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.13[Your ESP32 core version]\tools`.
+5. **Restart the Arduino IDE**, go to `tools`, and select the new option named **ESP32 sketch data upload**. Choose `fatfs` from the popup menu.
+6. **Run the ESP32**, open the serial monitor, and input the required ID. Your testing phase completes after this step.
 
 
 ## Code Explanation
