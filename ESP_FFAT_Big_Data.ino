@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
   if (Serial.available() > 0) {
-    ID = Serial.parseInt();
+    int ID = Serial.parseInt();
     FindString(ID);
     //FindDataNum = 0;
   }
