@@ -3,6 +3,8 @@
 This project is designed to process data uploaded to the FATFS of the 16MB ESP board and search for specific IDs within the data. The program searches through a data file, extracts relevant information, and processes it accordingly.
 
 In details, this method involves storing a sizable 3MB data on Flash, enabling the processing and parsing of each character and string. The termination of each string occurs upon the appearance of a curly bracket. Notably, each string consists of three parts, including two sections of random data and one part denoting the string number. This approach has proven effective for an attendance system, accommodating the pairing of two fingerprints with a single individual, where the numerical value signifies their unique ID. Moreover, the use of additional separators like commas and colons offers flexibility for handling various data types, such as sensor readings. In this context, the system accommodates 750 distinct IDs, with each ID occupying an approximate space of 4KB.
+  
+This code will function properly with 4MB and 8MB ESPs; however, you will need to utilize a file that occupies 73% of the total size of the flash storage partition. In my project, I encountered difficulty creating a custom partition, and I found that all default partitions were functioning seamlessly. Upon closer examination, I observed that the default partition scheme permits the utilization of approximately 73% of the storage. Given that my file size was 3.2 MB, this constraint compelled me to opt for a 16MB partition with a 9.9MB FAT FS.  
 
 ## Process Setup
 
